@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.background-image {
+  position: relative;
+}
+
+.background-image img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: black;
+}
+
+.content img{
+  padding-left: 3%;
+  width: 10%;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  align-items: center;
+  margin-left: 35px;
+  padding-left: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+
+}

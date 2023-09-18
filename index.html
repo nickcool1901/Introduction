@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle Heart</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+      
+      <nav class="header">
+        <div class="background-image">
+          <img src="img/Union.svg" style="background-size: cover; width: 100%;" alt="Background Image">
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="IDEJA.html">Ideja</a></li>
+            <li><a href="PIESAKI SAPNI.html">Piesaki Sapni</a></li>
+            <li><a href="UZŅĒMĒJIEM.html">Uzņēmējiem</a></li>
+            <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
+            <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
+            <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
+            <li><a href="#">LV</a></li>
+            <img class="nav-menu" onclick="toggleMenu()" src="img/1-page/menu.svg">
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/BlackLogo 3.jpg" alt="Logo">
+          </a>          
+        </div>
+      </nav>
+
+      <div class="image-container" style="padding-bottom: 5vh;">
+      <picture>
+        <source media="(min-width: 769px)" srcset="img/1-page/Sparkle Video 1.png" class="fullwidth-image">
+        <source media="(max-width: 769px)" srcset="img/1-page/Group 2.png"  class="img-butplay">
+        <img src="img/1-page/Sparkle Video 1.png" alt="Background Image" class="fullwidth-image">
+        <img src="img/1-page/Group 2.png" alt="Play" class="img-over" style="width: 10%; transform: translate(-50%, -50%); top: 50%; left: 50%;">
+      </picture>
+
+      </div>
+
+      <div class="main-text">
+        SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
+      </div>
+
+      <div class="images-container">
+        <div class="top-image">
+          <img src="img/1-page/ripped 6 7.svg" alt="Top">
+        </div>
+        <div class="bottom-images">
+          <img src="img/1-page/Zanda_1.jpg" alt="Zanda_1">
+          <img src="img/1-page/Sibilla_4.jpg" alt="Sibilla_4">
+          <div class="third-image">
+            <img src="img/1-page/Brinuma_meita-15.jpg" alt="Brinuma_meita-15">
+            <img src="img/1-page/Alina_1 1.jpg" alt="Alina_1">
+          </div>
+          <img src="img/1-page/Anda_2 1.jpg" alt="Anda_2">
+        </div>
+        <div class="bottom-image">
+          <img src="img/1-page/ripped 6 8.svg" alt="Bottom">
+        </div>
+      </div>   
+      
+      <div class="velies">
+        <p class="left-side">Vēliies piepildīt left-side sapni?</p>
+        <p class="right-side">Vēlies palīdzēt kādām piepildīt sapni?</p>
+      </div>
+      
+      <div class="button-container">
+        <button class="square-button left-side" style="margin-left: 20%;">
+          Sapņotājiem
+        </button>
+        <button class="square-button right-side" style="margin-right: 20%;">
+          Uzņēmējiem
+        </button>
+      </div>
+
+      <div class="intro-form">
+        <p>Sazināties ar mums</p>
+      </div>
+      
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" class="half-width" placeholder="Vārds, Uzvārds*" style="font-size: 1.5vh;">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" class="half-width" placeholder="E-pasts*" style="font-size: 1.5vh;">
+          </div>
+        </div>
+          <input type="tel" id="phone" name="phone" placeholder="Telefons*" style="font-size: 1.5vh;">
+          <textarea id="message" name="message" placeholder="Jautājums vai komentārs*" style="font-size: 1.5vh;"></textarea>
+        <div class="form-comment">
+            <p style="font-size: 2vh;">* obligāti aizpildamie lauki</p>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox">
+            <label for="checkbox" style="font-size: 2vh;">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+          </div>          
+          <div class="form-submit">
+          <button type="submit">Sūtīt</button>
+        </div>
+      </form>
+      
+      <footer>
+            <img src="/img/1-page/Group 9.png" alt="Advertising" class="footer-full-widht-1" style="top: 6vh;">
+            <img src="/img/footer.png" alt="Advertising"  class="footer-full-widht-2">
+      </footer>
+      
+      <script src="js/nav.js"></script>
+</body>
+</html>
+          <!-- <img src="/img/Union.svg" alt="">
+          <img src="img/BlackLogo 3.jpg" alt="Logo"> -->
+
+      <!-- <li><a href="#">Ideja</a></li>
+      <li><a href="#">Piesaki Saoni</a></li>
+      <li><a href="#">Uzņēmējiem</a></li>
+      <li><a href="#">Sapņu banka</a></li>
+      <li><a href="#">SAPŅUS ATBALSTA</a></li>
+      <li><a href="#">99 Iedvesmas stāsti</a></li>
+      <li><a href="#">LV</a></li>

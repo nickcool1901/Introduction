@@ -1,0 +1,542 @@
+/* @media (max-width: 480px) {
+  body {
+    font-size: 1vh;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 1vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    font-size: 1vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 1vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 20px;
+  }
+} */
+
+/* body {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  color: #2F4858;
+} */
+
+.header {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 3vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.menu {
+  position: absolute;
+  /* padding-left: 1vh;
+  padding-right: 5vh; */
+  width: 100%;
+  height: auto;
+  font-size: 2vh;
+  margin-right: 2vh;
+  z-index: 9;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.menu ul li {
+  margin: 2vh 2vh;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+nav .logo {
+  position: absolute;
+  width: 22%;
+  height: auto;
+  z-index: 100;
+}
+
+nav .logo img {
+  width: 45%;
+  height: auto;
+}
+
+nav.logo :hover {
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px; /* Отступы внутри списка */
+  z-index: 102;
+}
+
+.mobile-menu option {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.fullwidth-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-over {
+  position: absolute; 
+  height: auto;
+  z-index: 99;
+}
+
+.main-text {
+  padding-left: 15vh;
+  padding-right: 15vh;
+  padding-bottom: 5vh;
+  font-size: 2vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  text-align: center;
+  justify-content: center; /* Center horizontally */
+}
+
+.main-text h1 {
+  display: contents;
+  padding-bottom: 2vh;
+}
+
+.main-text h2 {
+  display: contents;
+  padding-bottom: 2vh;
+}
+
+.main-text h3 {
+  display: contents;
+  padding-bottom: 1vh;
+}
+
+.main-text h4 {
+  font-weight: normal;
+  display: contents;
+  padding-bottom: 1vh;
+}
+
+.main-text-landing {
+  padding-left: 15vh;
+  padding-right: 15vh;
+  padding-bottom: 2vh;
+  font-size: 2vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: left;
+  font-family: Montserrat;
+}
+
+.main-text-landing h3{
+  display: contents;
+  text-align: left;
+}
+
+.main-text-landing h4{
+  display: contents;
+  text-align: left;
+  font-weight: normal;
+}
+
+.main-text-landing h5{
+  display: contents;
+  text-align: left;
+  font-weight: normal;
+}
+
+.images-container {
+  padding-top: 2vh;
+  /* padding-bottom: 5vh; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 5vh;
+}
+
+.top-image {
+  position: absolute;
+  z-index: 99;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: -5px;
+  z-index: 99;
+}
+
+.bottom-images {
+  padding-left: 0.7vh;
+  /* padding-right: 0.5vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.third-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-container img {
+  margin: 0;
+  height: auto;
+}
+
+.velies {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.velies p {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3vh;
+}
+
+.velies h4 {
+  font-weight: normal;
+  font-size: 2vh;
+  text-align: center;
+}
+
+.left-side {
+  flex: 0 0 50%; /* Set the width of the first paragraph to 50% */
+  text-align: center; /* Center the text inside the paragraph */
+}
+
+.right-side {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.square-button {
+  flex: 0 0 auto;
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 1.5vh 5vh;
+  border-radius: 9vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 2vh;
+}
+
+.square-button:hover {
+  background-color: rgb(255, 132, 0);
+}
+
+.intro-form{
+  width: 100%;
+  margin-top: 10vh;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3.5vh;
+}
+
+form{
+  margin-top: 5vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  margin-bottom: 15vh;
+}
+
+input {
+  margin-bottom: 2vh;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+}
+
+input[type="text"] {
+  border: none;
+  background-color: rgb(220, 220, 220);
+  width: 90%;
+  padding: 2vh;
+  border-radius: 1vh;
+  margin-right: 1vh;
+}
+input[type="email"] {
+  border: none;
+  background-color: rgb(220, 220, 220);
+  width: 98%;
+  padding: 2vh;
+  border-radius: 1vh;
+  margin-left: 1vh;
+}
+input[type="tel"] {
+  border: none;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  padding: 2vh;
+  border-radius: 1vh;
+}
+textarea {
+  border: none;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  padding: 2vh;
+  border-radius: 1vh;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px; 
+}
+
+
+.form-submit {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.form-comment {
+  margin-bottom: 2vh;
+  font-style: italic;
+  color: #888;
+}
+
+form button {
+  flex: 0 0 auto;
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 1.5vh 5vh;
+  border-radius: 9vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 2vh;
+}
+
+form button:hover {
+  background-color: rgb(255, 132, 0);
+}
+
+.footer {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer-full-widht-1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-full-widht-2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.landing-page-footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 99;
+}
+
+.middle-select {
+  position: relative;
+  display: inline-block;
+  font-size: 2vh;
+}
+
+.middle-select-label {
+  color: orange;
+  padding: 1vh;
+  text-align: left;
+  width: 25vh;
+}
+
+.middle-select select {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(216, 216, 216);
+  color: black;
+  padding: 5px;
+}
+
+.photo-container {
+  padding-bottom: 1.5vh;
+  display: flex;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center; 
+}
+
+.photo-container .photo img {
+  cursor: pointer;
+}
+
+.container .photo:hover .overlay-photo {
+  z-index: -1;
+  opacity: 0;
+}
+
+.container .photo:hover .photo-number{
+  color: black;
+}
+
+.container .pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 101;
+  display: none;
+}
+
+.container .pop-up span {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .pop-up img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+
+.overlay-photo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo-number {
+  position: absolute;
+  bottom: 0px;
+  right: 2px;
+  color: white;
+  padding: 2px;
+  font-size: 28px;
+  z-index: 1;
+}
+
+.photo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2vh;
+}
