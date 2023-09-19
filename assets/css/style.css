@@ -1,9 +1,43 @@
+/* html {
+  font-size: 16px;
+} */
+
+/* @media (max-width: 480px) {
+  html {
+    font-size: 0.5px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 3.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 4.5px;   //700 tested
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 6.5px;   //900 tested
+    //font-size: calc(18px +16 *(100vh/1280));
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 9px;   //1200 tested
+  }
+} */
+
 /* @media (max-width: 480px) {
   body {
     font-size: 1vh;
   }
 }
-
 
 @media (min-width: 481px) and (max-width: 767px) {
   body {
@@ -50,14 +84,11 @@
   background-position: center center;
 }
 
-
 .menu {
   position: absolute;
-  /* padding-left: 1vh;
-  padding-right: 5vh; */
   width: 100%;
   height: auto;
-  font-size: 2vh;
+  font-size: calc(1px + 23 * (100vw / 1280));
   margin-right: 2vh;
   z-index: 9;
 }
@@ -85,14 +116,8 @@
 
 nav .logo {
   position: absolute;
-  width: 22%;
-  height: auto;
+  height: -1rem;
   z-index: 100;
-}
-
-nav .logo img {
-  width: 45%;
-  height: auto;
 }
 
 nav.logo :hover {
@@ -142,7 +167,7 @@ nav.logo :hover {
   padding-left: 15vh;
   padding-right: 15vh;
   padding-bottom: 5vh;
-  font-size: 2vh;
+  font-size: calc(1px + 19 * (100vw / 1280));
   display: flex;
   align-items: center; /* Center vertically */
   text-align: center;
@@ -174,7 +199,7 @@ nav.logo :hover {
   padding-left: 15vh;
   padding-right: 15vh;
   padding-bottom: 2vh;
-  font-size: 2vh;
+  font-size: calc(1px + 19 * (100vw / 1280));
   display: flex;
   align-items: center;
   text-align: left;
@@ -255,12 +280,12 @@ nav.logo :hover {
 .velies p {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 3vh;
+  font-size: calc(1.5px + 23 * (100vw / 1280));
 }
 
 .velies h4 {
   font-weight: normal;
-  font-size: 2vh;
+  font-size: calc(1px + 23 * (100vw / 1280));
   text-align: center;
 }
 
@@ -293,7 +318,7 @@ nav.logo :hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
-  font-size: 2vh;
+  font-size: calc(1px + 23 * (100vw / 1280));
 }
 
 .square-button:hover {
@@ -306,7 +331,7 @@ nav.logo :hover {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 3.5vh;
+  font-size: calc(1px + 27 * (100vw / 1280));
 }
 
 form{
@@ -394,7 +419,7 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
-  font-size: 2vh;
+  font-size: calc(1px + 23 * (100vw / 1280));
 }
 
 form button:hover {
@@ -431,7 +456,7 @@ form button:hover {
 .middle-select {
   position: relative;
   display: inline-block;
-  font-size: 2vh;
+  font-size: calc(1px + 17 * (100vw / 1280));
 }
 
 .middle-select-label {
@@ -490,7 +515,7 @@ form button:hover {
   width: 40px;
   height: 40px;
   background: #fff;
-  font-size: 50px;
+  font-size: calc(5px + 23 * (100vw / 1280));
   font-weight: bold;
   text-align: center;
   line-height: 40px;
@@ -527,7 +552,7 @@ form button:hover {
   right: 2px;
   color: white;
   padding: 2px;
-  font-size: 28px;
+  font-size: calc(1px + 23 * (100vw / 1280));
   z-index: 1;
 }
 
@@ -538,5 +563,5 @@ form button:hover {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 2vh;
+  font-size: calc(1px + 23 * (100vw / 1280));
 }
