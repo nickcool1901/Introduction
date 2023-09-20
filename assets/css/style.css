@@ -79,7 +79,8 @@
   position: absolute;
   width: 100%;
   height: auto;
-  max-height: 3vh;
+  /* max-height: 3vh; */
+  top: -3vh;
   background-size: cover;
   background-position: center center;
 }
@@ -88,7 +89,8 @@
   position: absolute;
   width: 100%;
   height: auto;
-  font-size: calc(1px + 21 * (100vw / 1280));
+  font-size: calc(1px + 37 * (100vw / 1280));
+  background: cover;
   margin-right: 2vh;
   z-index: 9;
 }
@@ -96,7 +98,7 @@
 .menu ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   max-width: 100%;
   height: auto;
   align-items: center;
@@ -104,7 +106,7 @@
 }
 
 .menu ul li {
-  margin: 2vh 2vh;
+  margin: 1vh 2vh;
 }
 
 .menu ul li a {
@@ -113,15 +115,20 @@
   font-weight: bold;
 }
 
-
-nav .logo {
+nav .logo{
   position: absolute;
   height: -1rem;
   z-index: 100;
+  transition: transform .3s;
 }
 
+nav .logo img {
+  /* width: 130%; */
+  width: calc(1px + 100 * (100vw / 1280));
+}
 nav.logo :hover {
   cursor: pointer;
+  
 }
 
 .mobile-menu {
@@ -151,6 +158,10 @@ nav.logo :hover {
   position: relative;
 }
 
+.image-container img {
+  width: 175%;
+}
+
 .fullwidth-image {
   position: relative;
   width: 100%;
@@ -164,10 +175,10 @@ nav.logo :hover {
 }
 
 .main-text {
-  padding-left: 15vh;
-  padding-right: 15vh;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-bottom: 5vh;
-  font-size: calc(1px + 19 * (100vw / 1280));
+  font-size: calc(1px + 33 * (100vw / 1280));
   display: flex;
   align-items: center; /* Center vertically */
   text-align: center;
@@ -199,7 +210,7 @@ nav.logo :hover {
   padding-left: 15vh;
   padding-right: 15vh;
   padding-bottom: 2vh;
-  font-size: calc(1px + 19 * (100vw / 1280));
+  font-size: calc(1px + 29 * (100vw / 1280));
   display: flex;
   align-items: center;
   text-align: left;
@@ -277,12 +288,12 @@ nav.logo :hover {
 .velies p {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: calc(1.5px + 23 * (100vw / 1280));
+  font-size: calc(1.5px + 37 * (100vw / 1280));
 }
 
 .velies h4 {
   font-weight: normal;
-  font-size: calc(1px + 23 * (100vw / 1280));
+  font-size: calc(1px + 27 * (100vw / 1280));
   text-align: center;
 }
 
@@ -315,7 +326,7 @@ nav.logo :hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
-  font-size: calc(1px + 23 * (100vw / 1280));
+  font-size: calc(1px + 33 * (100vw / 1280));
 }
 
 .square-button:hover {
@@ -328,7 +339,7 @@ nav.logo :hover {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: calc(1px + 27 * (100vw / 1280));
+  font-size: calc(1px + 37 * (100vw / 1280));
 }
 
 form{
@@ -416,7 +427,7 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
-  font-size: calc(1px + 23 * (100vw / 1280));
+  font-size: calc(1px + 27 * (100vw / 1280));
 }
 
 form button:hover {
@@ -453,7 +464,7 @@ form button:hover {
 .middle-select {
   position: relative;
   display: inline-block;
-  font-size: calc(1px + 17 * (100vw / 1280));
+  font-size: calc(1px + 27 * (100vw / 1280));
 }
 
 .middle-select-label {
@@ -512,7 +523,7 @@ form button:hover {
   width: 40px;
   height: 40px;
   background: #fff;
-  font-size: calc(5px + 23 * (100vw / 1280));
+  font-size: calc(5px + 27 * (100vw / 1280));
   font-weight: bold;
   text-align: center;
   line-height: 40px;
@@ -527,12 +538,11 @@ form button:hover {
   transform: translate(-50%, -50%);
 }
 
-.photo {
+.photo{
   width: 160px;
   height: 160px;
   position: relative;
 }
-
 
 .overlay-photo {
   width: 100%;
@@ -549,7 +559,7 @@ form button:hover {
   right: 2px;
   color: white;
   padding: 2px;
-  font-size: calc(1px + 23 * (100vw / 1280));
+  font-size: calc(1px + 33 * (100vw / 1280));
   z-index: 1;
 }
 
