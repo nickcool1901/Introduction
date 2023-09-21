@@ -1,0 +1,123 @@
+/* html {
+  font-size: 18px;
+} */
+
+@media (max-width: 390) {
+  html {
+    font-size: calc(1px + 2 * (100vw / 1025));
+  }
+
+  nav .logo img {
+  width: 3rem;
+  }
+}
+
+@media (max-width: 576) {
+  html {
+    font-size: calc(1px + 2.5 * (100vw / 1025));
+  }
+
+  nav .logo img {
+    width: 9rem;
+    }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: calc(1px + 2.5 * (100vw / 1025));
+  }
+
+  nav .logo img {
+    width: 9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: calc(1px + 3.5 * (100vw / 1025));
+  }
+
+  nav .logo img {
+    width: 15rem;
+    }
+
+  .form-row {
+    display: block;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5vh;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: calc(1px + 4 * (100vw / 1025));
+  }
+
+  nav .logo img {
+    width: 15rem;
+    }
+}
+
+.menu {
+ font-size: 2.5rem;
+}
+
+.menu ul li {
+	margin: 0rem 4rem;
+}
+
+.main-text {
+font-size: 3rem;
+}
+
+.main-text-landing {
+font-size: 2.5rem;
+}
+
+.velies p {
+font-size: 3rem;
+}
+
+.velies h4 {
+font-size: 2rem;
+}
+
+.square-button {
+font-size: 2.5rem;
+padding: 3rem 5rem;
+border-radius: 10rem;
+}
+
+.intro-form {
+font-size: 7rem;
+}
+
+form button {
+	font-size: 2.5rem;
+	padding: 3rem 9rem;
+	border-radius: 10rem;
+}
+
+.middle-select {
+font-size: 1.5rem;
+}
+
+.container .pop-up span {
+font-size: 2.5rem;
+}
+
+.photo-number {
+font-size: 2rem;
+}
+
+.photo-text {
+font-size: 2rem;
+}
