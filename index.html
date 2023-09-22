@@ -11,8 +11,8 @@
 </head>
 <body>
       
-      <nav class="header">
-        <div class="background-image">
+      <nav class="header" style="padding-bottom: 0;">
+        <div class="background-image" id="navLinks">
           <img src="assets/img/Union.svg" style="background-size: cover; width: 100%;" alt="Background Image">
         </div>
         <div class="menu">
@@ -24,7 +24,7 @@
             <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
             <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
             <li><a href="#">LV</a></li>
-            <!-- <img class="nav-menu" onclick="toggleMenu()" src="assets/img/1-page/menu.svg"> -->
+            <img class="nav-menu" onclick="toggleMenu()" src="assets/img/1-page/menu.svg">
           </ul>
         </div>
         <div class="logo">
@@ -34,21 +34,29 @@
         </div>
       </nav>
 
-      <div class="image-container" style="padding-bottom: 5vh;">
-      <!-- <picture>
+      <!-- <div class="image-container" style="padding-bottom: 5vh;">
+      <picture>
         <source media="(min-width: 769px)" srcset="assets/img/1-page/Sparkle Video 1.png" class="fullwidth-image">
         <source media="(max-width: 769px)" srcset="assets/img/1-page/Group 2.png"  class="img-butplay">
         <img src="assets/img/1-page/Sparkle Video 1.png" alt="Background Image" class="fullwidth-image">
         <img src="assets/img/1-page/Group 2.png" alt="Play" class="img-over" style="width: 10%; transform: translate(-50%, -50%); top: 50%; left: 50%;">
-      </picture> -->
+      </picture>
 
-       <video id="myVideo" style="width: 100%; height: auto;" controls autoplay muted loop>
-        <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
+      <video id="myVideo" style="width: 100%; height: auto; z-index: 99;" controls autoplay muted loop>
+       <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
         Jūsu browseris neatbalsta video.
       </video>
+      <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto;" alt="playButton" onclick="playPause()">
+      </div> -->
 
-      </div>
-
+      <div class="image-container" style="padding-bottom: 5vh;">
+        <video id="myVideo" style="width: 100%; height: auto; z-index: 99;" controls autoplay muted onclick="playPause()">
+            <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
+            Jūsu browseris neatbalsta video.
+        </video>
+        <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto; top: 40%; left: 50%;" alt="playButton">
+    </div>
+    
       <div class="main-text">
         SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
       </div>
@@ -119,5 +127,6 @@
       
       <script src="assets/js/nav.js"></script>
       <script src="assets/js/video-auto.js"></script>
+      <!-- <script src="assets/js/playVideo.js"></script> -->
 </body>
 </html>
