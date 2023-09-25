@@ -15,7 +15,7 @@
   position: absolute;
   width: 100%;
   height: auto;
-  top: -3vh;
+  top: -3.5rem;
   background-size: cover;
   background-position: center center;
 }
@@ -50,6 +50,42 @@
   font-weight: bold;
 }
 
+.left-menu {
+  padding: 200rem 50rem;
+  position: fixed;
+  background: rgba(20,20,20,.5);
+  backdrop-filter: blur(2rem);
+  border-right: 1rem solid greenyellow;
+  transition: all 0.2s ease;
+  left: -50vw;
+  height: 100%;
+  z-index: 101;
+}
+
+.left-menu span{
+  color: greenyellow;
+}
+
+/* .left-menu:hover {
+  left: 0;
+  transition: all 0.2s ease;
+} */
+
+.left-menu a{
+  text-decoration: none;
+  color: white;
+  height: 100vh;
+  padding-left: 5px;
+  transition: all 0.2s ease;
+  list-style-type: none;
+}
+
+.left-menu a:hover {
+  border-left: 0.2rem solid greenyellow;
+  padding-left: 1rem;
+  transition: all 0.2s ease;
+}
+
 nav .logo{
   position: absolute;
   height: -1rem;
@@ -58,33 +94,31 @@ nav .logo{
 }
 
 nav .logo img {
-  /* width: 130%; */
   width: calc(1px + 100 * (100vw / 1280));
 }
+
 nav.logo :hover {
   cursor: pointer;
-  
 }
 
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px; /* Отступы внутри списка */
-  z-index: 102;
-}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 
-.mobile-menu option {
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-  cursor: pointer;
-}
+  .nav-menu {
+    cursor: pointer;
+    z-index: 100;
+    top: 1rem;
+    right: 5rem;
+    position: absolute;
+    display: block;
+  }
 
-.mobile-menu.active {
-  display: block;
+  .nav-menu img {
+    width: 7rem;
+    z-index: 100;
+  }
 }
 
 .image-container {
@@ -174,45 +208,59 @@ nav.logo :hover {
   font-weight: normal;
 }
 
-.images-container {
-  padding-top: 2vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  margin-bottom: 5vh;
+img {
+  max-width: 100%;
 }
 
 .top-image {
-  position: absolute;
-  z-index: 99;
-}
-
-.bottom-image {
-  position: absolute;
-  bottom: -5px;
-  z-index: 99;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+  margin-bottom: 3%;
 }
 
 .bottom-images {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.photos-row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+  z-index: -1;
 }
 
 .third-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1%;
 }
 
-.images-container img {
-  margin: 0;
+.bottom-image {
+	position: absolute;
+	width: 100%;
+	margin-top: -3%;
+}
+
+#photo1 {
+	width: 24%;
+  height: auto;
+}
+
+#photo2 {
+	width: 24.5%;
+  height: auto;
+}
+
+#photo3 {
+	width: 22%;
+  height: auto;
+}
+
+#photo4 {
+	width: 29.5%;
   height: auto;
 }
 
@@ -282,10 +330,10 @@ nav.logo :hover {
 }
 
 form{
-  margin-top: 5vh;
-  margin-left: 15vh;
-  margin-right: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 5rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 15rem;
 }
 
 input {
@@ -307,7 +355,7 @@ input[type="text"] {
   border: none;
   background-color: rgb(220, 220, 220);
   width: 90%;
-  padding: 2vh;
+  padding: 2.5rem;
   border-radius: 1vh;
   margin-right: 1vh;
 }
@@ -315,7 +363,7 @@ input[type="email"] {
   border: none;
   background-color: rgb(220, 220, 220);
   width: 98%;
-  padding: 2vh;
+  padding: 2.5rem;
   border-radius: 1vh;
   margin-left: 1vh;
 }
@@ -323,14 +371,14 @@ input[type="tel"] {
   border: none;
   background-color: rgb(220, 220, 220);
   width: 100%;
-  padding: 2vh;
+  padding: 2.5rem;
   border-radius: 1vh;
 }
 textarea {
   border: none;
   background-color: rgb(220, 220, 220);
   width: 100%;
-  padding: 2vh;
+  padding: 2.5rem;
   border-radius: 1vh;
 }
 
@@ -383,14 +431,14 @@ form button:hover {
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 1;
+  z-index: -2;
 }
 
 .footer-full-widht-2 {
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 2;
+  z-index: -1;
 }
 
 .landing-page-footer {

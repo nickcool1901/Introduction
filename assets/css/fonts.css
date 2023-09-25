@@ -1,45 +1,41 @@
-/* html {
-  font-size: 18px;
-} */
-
-@media (max-width: 390) {
+@media (max-width: 390px) {
   html {
-    font-size: calc(1px + 2 * (100vw / 1025));
+    font-size: calc(1px + 1.5 * (100vw / 1025));
   }
 
   nav .logo img {
-  width: 3rem;
+    width: 14rem;
   }
 }
 
-@media (max-width: 576) {
-  html {
-    font-size: calc(1px + 2.5 * (100vw / 1025));
-  }
-
-  nav .logo img {
-    width: 9rem;
-    }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: calc(1px + 2.5 * (100vw / 1025));
-  }
-
-  nav .logo img {
-    width: 9rem;
-    }
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 391px) and (max-width: 576px) {
   html {
     font-size: calc(1px + 3.5 * (100vw / 1025));
   }
 
   nav .logo img {
-    width: 15rem;
-    }
+    width: 14rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  html {
+    font-size: calc(1px + 4.5 * (100vw / 1025));
+  }
+
+  nav .logo img {
+    width: 14rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: calc(1px + 4.5 * (100vw / 1025));
+  }
+
+  nav .logo img {
+    width: 14rem;
+  }
 
   .form-row {
     display: block;
@@ -58,16 +54,29 @@
 
 @media (min-width: 1025px) {
   html {
-    font-size: calc(1px + 4 * (100vw / 1025));
+    font-size: calc(1px + 5.5 * (100vw / 1025));
   }
 
   nav .logo img {
     width: 15rem;
-    }
+  }
 }
+
 
 .menu {
  font-size: 2.5rem;
+}
+
+.left-menu {
+  padding: 15rem 5rem;
+}
+
+.left-menu a{
+  font-size: 4rem;
+}
+
+.left-menu li {
+  margin: 3rem 0;
 }
 
 .menu ul li {
@@ -111,7 +120,7 @@ font-size: 1.5rem;
 }
 
 .container .pop-up span {
-font-size: 2.5rem;
+font-size: 5rem;
 }
 
 .photo-number {
