@@ -125,6 +125,7 @@ nav.logo :hover {
   width: 100%;
   height: auto;
   position: relative;
+  z-index: -1;
 }
 
 .image-container img {
@@ -216,7 +217,6 @@ img {
 	position: absolute;
 	width: 100%;
 	z-index: 0;
-  margin-bottom: 3%;
 }
 
 .bottom-images {
@@ -241,11 +241,10 @@ img {
 .bottom-image {
 	position: absolute;
 	width: 100%;
-	margin-top: -3%;
 }
 
 #photo1 {
-	width: 24%;
+	width: 24.5%;
   height: auto;
 }
 
@@ -260,6 +259,26 @@ img {
 }
 
 #photo4 {
+	width: 29.5%;
+  height: auto;
+}
+
+#photo5 {
+	width: 24.5%;
+  height: auto;
+}
+
+#photo6 {
+	width: 24.5%;
+  height: auto;
+}
+
+#photo7 {
+	width: 22%;
+  height: auto;
+}
+
+#photo8 {
 	width: 29.5%;
   height: auto;
 }
@@ -421,10 +440,15 @@ form button:hover {
   background-color: rgb(255, 132, 0);
 }
 
+form checkbox-container checkbox-label {
+  font-size: 3rem;
+}
+
 .footer {
   position: absolute;
   background-size: cover;
   background-position: center center;
+  z-index: 0;
 }
 
 .footer-full-widht-1 {
@@ -445,7 +469,7 @@ form button:hover {
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 99;
+  z-index: 0;
 }
 
 .middle-select {
@@ -530,7 +554,7 @@ form button:hover {
   width: 160px;
   height: 160px;
   position: relative;
-  
+  z-index: 0;
 }
 
 .overlay-photo {

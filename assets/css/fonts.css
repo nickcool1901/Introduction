@@ -58,10 +58,9 @@
   }
 
   nav .logo img {
-    width: 15rem;
+    width: 14rem;
   }
 }
-
 
 .menu {
  font-size: 2.5rem;
@@ -89,6 +88,7 @@ font-size: 3rem;
 
 .main-text-landing {
 font-size: 2.5rem;
+padding-top: 15rem;
 }
 
 .velies p {
