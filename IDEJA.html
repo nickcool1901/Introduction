@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ideja</title>
+    <title class="lng-unit">Ideja</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css//fonts.css">
 </head>
@@ -19,7 +19,11 @@
             <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
             <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
             <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
-            <li><a href="#">LV</a></li>
+            <select class="change-lang" name="language">
+              <option value="lv" selected>lv</option>
+              <option value="ru">ru</option>
+              <option value="en">en</option>
+            </select>
           </ul>
         </div>
 
@@ -32,7 +36,11 @@
             <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
             <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
             <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
-            <li><a href="#">LV</a></li>
+            <select class="change-lang" name="language">
+              <option value="lv" selected>lv</option>
+              <option value="ru">ru</option>
+              <option value="en">en</option>
+            </select>
           </ul>
         </div>
 
@@ -48,7 +56,7 @@
     </nav>
       
     <div class="main-text">
-        <h1>IDEJA</h1>
+        <h1 style="text-transform: uppercase;" class="lng-idea">IDEJA</h1>
         <br><br><br>
         Juris Gogulis ir pasaules iedvesmots mākslinieks–horeogrāfs un režisors, kura ikdiena aizrit radot aizkustinošus un iedvesmojošus radošus projektus. Juris ir pārliecināts, ka ir vērts ticēt katram savam sapnim un censties to īstenot. Kā smejas pats - daudzu draugu sapņiem viņš tic vairāk, nekā viņi paši!
     </div>
@@ -72,14 +80,17 @@
         <br><br>
         <h3 style="font-weight: normal;">For it is Juris work that is the<br>light the human race needs so badly these days.<br>His vision is inspired and talent is beyond measure.</h3>
       </div>
-      <img style="padding-left: 25rem; width: 5%;" src="assets/img/2-page/Poga _.svg" alt="Poga-back">
-      <img style="padding-left: 5rem; width: 5%;" src="assets/img/2-page/Poga _-1.svg" alt="Poga-forward">
+      <img style="padding-left: 25rem; width: 3%;" src="assets/img/2-page/Poga _.svg" alt="Poga-back">
+      <img style="padding-left: 5rem; width: 3%;" src="assets/img/2-page/Poga _-1.svg" alt="Poga-forward">
       <p style="padding-bottom: 5rem;"></p>
 
 
     <footer>
         <img src="assets/img/footer.png" alt="Advertising" class="landing-page-footer">
     </footer>
-    <script src="assets/js/nav.js"></script>
+
+    <script type="module" src="assets/js/languages.js"></script>
+    <script type="module" src="assets/js/lang.js"></script>
+    <script src="assets/js/left-menu.js"></script>
 </body>
 </html>

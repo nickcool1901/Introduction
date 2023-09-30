@@ -10,7 +10,7 @@
 
 @media (min-width: 391px) and (max-width: 576px) {
   html {
-    font-size: calc(1px + 3.5 * (100vw / 1025));
+    font-size: calc(1px + 4 * (100vw / 1025));
   }
 
   nav .logo img {
@@ -54,7 +54,7 @@
 
 @media (min-width: 1025px) {
   html {
-    font-size: calc(1px + 5.5 * (100vw / 1025));
+    font-size: calc(1px + 5 * (100vw / 1025));
   }
 
   nav .logo img {
@@ -63,7 +63,7 @@
 }
 
 .menu {
- font-size: 2.5rem;
+ font-size: 3rem;
 }
 
 .left-menu {
@@ -71,7 +71,7 @@
 }
 
 .left-menu a{
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .left-menu li {
@@ -83,24 +83,24 @@
 }
 
 .main-text {
-font-size: 3rem;
+font-size: 3.5rem;
 }
 
 .main-text-landing {
-font-size: 2.5rem;
+font-size: 3rem;
 padding-top: 15rem;
 }
 
 .velies p {
-font-size: 3rem;
+font-size: 3.5rem;
 }
 
 .velies h4 {
-font-size: 2rem;
+font-size: 2.5rem;
 }
 
 .square-button {
-font-size: 2.5rem;
+font-size: 3rem;
 padding: 3rem 5rem;
 border-radius: 10rem;
 }
@@ -110,13 +110,13 @@ font-size: 7rem;
 }
 
 form button {
-	font-size: 2.5rem;
+	font-size: 4rem;
 	padding: 3rem 9rem;
 	border-radius: 10rem;
 }
 
 .middle-select {
-font-size: 1.5rem;
+font-size: 3rem;
 }
 
 .container .pop-up span {
@@ -125,8 +125,4 @@ font-size: 5rem;
 
 .photo-number {
 font-size: 5rem;
-}
-
-.photo-text {
-font-size: 3rem;
 }

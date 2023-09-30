@@ -13,25 +13,20 @@ if (video.readyState >= 2) {
 
 function playPause() {
   if (video.paused) {
-    video.play();
     playButton.style.display = "none";
-  } else if (video.play){
-    // video.pause(); I tested and don't need
+  } else {
     playButton.style.display = "block";
-    video.style.visibility = "hidden";
   }
 }
 
 function playPauseButton() {
-if (video.paused) {
+  if (video.paused) {
+    video.style.visibility = "visible";
     video.play();
     playButton.style.display = "none";
-    video.style.visibility = "visible";
-} else if (video.play){
-    // video.pause(); I tested and don't need
+  } else {
     playButton.style.display = "block";
-}
+  }
 }
 
-// Добавляем обработчик события клика на кнопку
-playButton.addEventListener('click', playPauseButton);
+playButton.addEventListener('onclick', playPauseButton);

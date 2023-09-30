@@ -22,7 +22,11 @@
         <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
         <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
         <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
-        <li><a href="#">LV</a></li>
+        <select class="change-lang" name="language">
+          <option value="lv" selected>lv</option>
+          <option value="ru">ru</option>
+          <option value="en">en</option>
+        </select>
       </ul>
     </div>
     <div class="left-menu">
@@ -34,7 +38,11 @@
         <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
         <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
         <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
-        <li><a href="#">LV</a></li>
+        <select class="change-lang" name="language"> <!-- I can use it only when i comment rows from 25 to 29-->
+          <option value="lv" selected>lv</option>
+          <option value="ru">ru</option>
+          <option value="en">en</option>
+        </select>
       </ul>
     </div>
     <div class="logo">
@@ -60,11 +68,11 @@
   <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto;" alt="playButton" onclick="playPause()">
   </div> -->
   <div class="image-container" style="padding-bottom: 5vh;">
-    <video id="myVideo" style="width: 100%; height: auto; z-index: 99;" controls autoplay muted onclick="playPause()">
+    <video id="myVideo" style="width: 100%; height: auto; z-index: -1;" controls autoplay muted onclick="playPause()">
         <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
         Jūsu browseris neatbalsta video.
     </video>
-    <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto; top: 40%; left: 50%;" alt="playButton">
+    <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto; top: 40%; left: 50%;" alt="playButton" onclick="playPauseButton()">
   </div>
   <div class="main-text">
     SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
@@ -102,7 +110,7 @@
   </div>
 
   <div class="intro-form">
-    <p>Sazināties ar mums</p>
+    <p style="text-transform: uppercase;" class="lng-contactUs">Sazināties ar mums</p>
   </div>
   <form>
     <div class="form-row">
@@ -132,8 +140,9 @@
         <img src="assets/img/footer.png" alt="Advertising"  class="footer-full-widht-2">
   </footer>
 
-  <script src="assets/js/nav.js"></script>
+  <script type="module" src="assets/js/languages.js"></script>
+  <script type="module" src="assets/js/lang.js"></script>
+  <script src="assets/js/left-menu.js"></script>
   <script src="assets/js/video-auto.js"></script>
-  <!-- <script src="assets/js/playVideo.js"></script> -->
 </body>
 </html>

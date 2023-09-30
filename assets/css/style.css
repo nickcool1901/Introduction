@@ -33,7 +33,7 @@
 .menu ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   max-width: 100%;
   height: auto;
   align-items: center;
@@ -48,10 +48,16 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: transform 1s;
+}
+
+.menu ul li a:hover {
+  transform-origin: left;
+  transform: scale(1);
 }
 
 .left-menu {
-  padding: 200rem 50rem;
+  padding: 150rem 50rem;
   position: fixed;
   background: rgba(20,20,20,.5);
   backdrop-filter: blur(2rem);
@@ -101,6 +107,32 @@ nav.logo :hover {
   cursor: pointer;
 }
 
+.menu select {
+  margin-right: 10px;
+  font-size: 3.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  background-color: #545454;
+  color: white;
+}
+
+select option:hover {
+  background-color: white;
+  display: block;
+  background-color: black;
+}
+
+.menu select:hover {
+  background-color: #e0e0e0;
+  color: black;
+  box-shadow: -2rem -2rem 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu select option {
+  border-radius: 1rem;
+}
+
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -125,7 +157,7 @@ nav.logo :hover {
   width: 100%;
   height: auto;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .image-container img {
@@ -146,6 +178,10 @@ nav.logo :hover {
 
 #playButton {
   display: none;
+}
+
+#playButton:hover{
+  transform: scale(1.5);
 }
 
 .main-text {
@@ -475,14 +511,13 @@ form checkbox-container checkbox-label {
 .middle-select {
   position: relative;
   display: inline-block;
-  font-size: calc(1px + 27 * (100vw / 1280));
 }
 
 .middle-select-label {
   color: orange;
   padding: 1vh;
   text-align: left;
-  width: 25vh;
+  max-width: 35rem;
 }
 
 .middle-select select {
@@ -493,6 +528,7 @@ form checkbox-container checkbox-label {
   background-color: rgb(216, 216, 216);
   color: black;
   padding: 5px;
+  font-style: 3rem;
 }
 
 .photo-container {

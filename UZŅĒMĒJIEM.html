@@ -18,7 +18,11 @@
             <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
             <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
             <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
-            <li><a href="#">LV</a></li>
+            <select class="change-lang" name="language">
+              <option value="lv" selected>lv</option>
+              <option value="ru">ru</option>
+              <option value="en">en</option>
+            </select>
           </ul>
         </div>
 
@@ -47,13 +51,13 @@
       </nav>
 
         <div class="main-text">
-          <h1 style="text-transform: uppercase;">Uzņēmējiem</h1>
+          <h1 style="text-transform: uppercase;" class="lng-entrepreneurs">Uzņēmējiem</h1>
           <br><br>
           <h3 style="font-weight: normal;">Ja ticat labākas pasaules attīstībai un vēlaties piedalīties starptautisku ideju realizēšanā, tad priecāsimies ar Jums iepazīties.</h3>
         </div>
 
         <div class="intro-form">
-            <p>PALĪDZI ĪSTENOT SAPNI!</p>
+            <p class="lng-dreamTrue">PALĪDZI ĪSTENOT SAPNI!</p>
         </div>
 
           <form>
@@ -82,6 +86,8 @@
         <footer>
             <img src="assets/img/footer.png" alt="Advertising" class="landing-page-footer" style="padding-top: 15vh;">
         </footer>
-        <script src="assets/js/nav.js"></script>
+        <script type="module" src="assets/js/languages.js"></script>
+        <script type="module" src="assets/js/lang.js"></script>
+        <script src="assets/js/left-menu.js"></script>
 </body>
 </html>
