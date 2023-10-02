@@ -1,13 +1,16 @@
-const select = document.querySelector('select');
+const allSelects = document.querySelectorAll('.change-lang');
 const allLang = ['en', 'ru', 'lv'];
 
 import { langArr } from './lang.js';
 
-select.addEventListener('change', changeURLLanguage);
+// Добавьте обработчик события change для каждого селектора
+allSelects.forEach(select => {
+  select.addEventListener('change', changeURLLanguage);
+});
 
 // Адрес к URL с выбранным языком
-function changeURLLanguage() {
-  let lang = select.value;
+function changeURLLanguage(event) {
+  let lang = event.target.value; // Получаем выбранный язык из целевого элемента (селекта)
   location.href = window.location.pathname + '#' + lang;
   location.reload();
 }
@@ -15,12 +18,16 @@ function changeURLLanguage() {
 function changeLanguage() {
   let hash = window.location.hash;
   hash = hash.substring(1);
-  console.log(hash);
+  // console.log(hash);
   if (!allLang.includes(hash)) {
     location.href = window.location.pathname + '#lv';
     location.reload();
   }
-  select.value = hash;
+  
+  // Устанавливаем значение во всех селекторах
+  allSelects.forEach(select => {
+    select.value = hash;
+  });
 
   // Используйте langArr из вашего импортированного файла
   // document.querySelector('title').innerHTML = langArr['unit'][hash];

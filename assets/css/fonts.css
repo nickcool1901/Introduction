@@ -1,6 +1,6 @@
 @media (max-width: 390px) {
   html {
-    font-size: calc(1px + 1.5 * (100vw / 1025));
+    font-size: calc(1px + 3 * (100vw / 1025));
   }
 
   nav .logo img {
