@@ -68,7 +68,7 @@
   <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto;" alt="playButton" onclick="playPause()">
   </div> -->
   <div class="image-container" style="padding-bottom: 5vh;">
-    <video id="myVideo" style="width: 100%; height: auto; z-index: -1;" controls autoplay muted onclick="playPause()">
+    <video id="myVideo" style="width: 100%; height: auto;" controls muted onclick="playPause()" id="autoplay">
         <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
         Jūsu browseris neatbalsta video.
     </video>
@@ -140,6 +140,11 @@
         <img src="assets/img/footer.png" alt="Advertising"  class="footer-full-widht-2">
   </footer>
 
+  <script>
+    window.onload = function(){
+      document.getElementById("autoplay").play();
+    }
+  </script>
   <script type="module" src="assets/js/languages.js"></script>
   <script type="module" src="assets/js/lang.js"></script>
   <script src="assets/js/left-menu.js"></script>

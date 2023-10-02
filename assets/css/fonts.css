@@ -59,6 +59,7 @@
 
   nav .logo img {
     width: 14rem;
+    z-index: 0;
   }
 }
 
