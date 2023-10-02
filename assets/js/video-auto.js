@@ -11,17 +11,31 @@ if (video.readyState >= 2) {
     video.play();
 }
 
-// Check for 'Safari' in user agent
-if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-console.log('This is Safari');
 function playPause() {
+  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    if (video.paused) {
+      playButton.style.display = "block";
+    } else {
+      playButton.style.display = "none";
+    }
+}else{
   if (video.paused) {
     playButton.style.display = "none";
   } else {
     playButton.style.display = "block";
   }
+  }
 }
-  function playPauseButton() {
+
+function playPauseButton() {
+  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    if (video.paused) {
+      video.play();
+      playButton.style.display = "none";
+    } else {
+      playButton.style.display = "none";
+    }
+  }else{
     if (video.paused) {
       video.play();
       playButton.style.display = "none";
@@ -29,23 +43,5 @@ function playPause() {
       playButton.style.display = "none";
     }
   }
-}
-else {
-console.log('This is not Safari'); // works also with safari and i can't solve it
-function playPause() {
-  if (video.paused) {
-    playButton.style.display = "none";
-  } else {
-    playButton.style.display = "block";
-  }
-}
-function playPauseButton() {
-  if (video.paused) {
-    video.play();
-    playButton.style.display = "none";
-  } else {
-    playButton.style.display = "none";
-  }
-}
 }
 playButton.addEventListener('click', playPauseButton);
