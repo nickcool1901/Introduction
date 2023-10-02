@@ -12,7 +12,7 @@ if (video.readyState >= 2) {
 }
 
 // Проверка на наличие строки 'Safari' в user agent
-if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+if (navigator.userAgent.indexOf('Safari') != -1 ) {
 
 console.log('This is Safari');
 function playPause() {
@@ -21,7 +21,14 @@ function playPause() {
   } else {
     playButton.style.display = "block";
   }
-  return;
+  function playPauseButton() {
+    if (video.paused) {
+      video.play();
+      playButton.style.display = "none";
+    } else {
+      playButton.style.display = "block";
+    }
+  }
 }
 } else {
 
@@ -33,16 +40,15 @@ function playPause() {
     playButton.style.display = "none";
   }
 }
+function playPauseButton() {
+  if (video.paused) {
+    video.play();
+    playButton.style.display = "block";
+  } else {
+    playButton.style.display = "none";
+  }
+}
 }
 
-// function playPauseButton() {
-//   if (video.paused) {
-//     video.style.visibility = "visible";
-//     video.play();
-//     playButton.style.display = "none";
-//   } else {
-//     playButton.style.display = "block";
-//   }
-// }
 
-playButton.addEventListener('onclick', playPauseButton);
+playButton.addEventListener('click', playPauseButton);
