@@ -12,7 +12,7 @@ if (video.readyState >= 2) {
 }
 
 function playPause() {
-  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+  if (navigator.userAgent.indexOf('AppleWebKit') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
     if (video.paused) {
       playButton.style.display = "block";
     } else {

@@ -8,6 +8,8 @@
     <title>Sparkle Heart</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css//fonts.css">
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"> -->
 </head>
 <body>
   <nav class="header" style="padding-bottom: 0;">
@@ -54,6 +56,7 @@
       <img  src="assets/img/1-page/menu.svg" alt="Меню">
     </div>
   </nav>
+
   <!-- <div class="image-container" style="padding-bottom: 5vh;">
   <picture>
     <source media="(min-width: 769px)" srcset="assets/img/1-page/Sparkle Video 1.png" class="fullwidth-image">
@@ -67,13 +70,17 @@
   </video>
   <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto;" alt="playButton" onclick="playPause()">
   </div> -->
+
   <div class="image-container" style="padding-bottom: 5vh;">
-    <video id="myVideo" style="width: 100%; height: auto;" controls muted onclick="playPause()">
-        <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
+
+    <video id="myVideo" class="video-js vjs-theme-forest" data-setup='{}' autoplay controls muted onclick="playPause()">
+      <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">
         Jūsu browseris neatbalsta video.
     </video>
-    <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto; top: 40%; left: 50%;" alt="playButton">
+
+    <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto; top: 45%; left: 45%;" alt="playButton">
   </div>
+  
   <div class="main-text">
     SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
   </div>
@@ -144,5 +151,6 @@
   <script type="module" src="assets/js/lang.js"></script>
   <script src="assets/js/left-menu.js"></script>
   <script src="assets/js/video-auto.js"></script>
+  <!-- <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script> -->
 </body>
 </html>
