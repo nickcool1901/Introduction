@@ -194,7 +194,7 @@ select option:hover {
 .img-over {
   position: absolute;
   height: auto;
-  z-index: 45;
+  z-index: 0;
 }
 
 #playButton {
