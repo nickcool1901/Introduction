@@ -66,6 +66,7 @@
   text-align: center;
   height: 100vh;
   z-index: 100;
+  overflow-y: auto;
 }
 
 .left-menu span{
@@ -191,7 +192,7 @@ select option:hover {
 }
 
 .img-over {
-  position: absolute; 
+  position: absolute;
   height: auto;
   z-index: 45;
 }
