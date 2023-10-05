@@ -33,14 +33,21 @@
     </div>
     <div class="left-menu">
       <ul>
-        <li style="padding-bottom: 5rem;"><a href="index.html" style="font-size: 6rem;"><span>S</span>parkle heart</a></li>
+        <li style="padding-bottom: 15rem;"><a href="index.html" style="font-size: 10rem;" onclick="toggleMenu"><span>S</span>parkle heart</a></li>
+
+        <div class="Languages">
+          <li><a href="">LV</a></li>
+          <li><a href="">EN</a></li>
+          <li><a href="">RU</a></li>
+        </div>
+
         <li><a href="IDEJA.html">Ideja</a></li>
         <li><a href="PIESAKI SAPNI.html">Piesaki Sapni</a></li>
         <li><a href="UZŅĒMĒJIEM.html">Uzņēmējiem</a></li>
         <li><a href="SAPŅU BANKA.html">Sapņu banka</a></li>
         <li><a href="SAPŅUS ATBALSTA.html">SAPŅUS ATBALSTA</a></li>
         <li><a href="99 IEDVESMAS STĀSTI.html">99 Iedvesmas stāsti</a></li>
-        <select class="change-lang" name="language"> <!-- I can use it only when i comment rows from 25 to 29-->
+        <select class="change-lang" name="language" style="width: 25%; height: auto;">
           <option value="lv" selected>lv</option>
           <option value="ru">ru</option>
           <option value="en">en</option>
@@ -52,7 +59,7 @@
         <img src="assets/img/BlackLogo 3.jpg" alt="Logo">
       </a>          
     </div>
-    <div class="nav-menu" onclick="toggleMenu()">
+    <div class="nav-menu" onclick="toggleMenu()" style="z-index: 102;">
       <img  src="assets/img/1-page/menu.svg" alt="Меню">
     </div>
   </nav>
@@ -71,7 +78,7 @@
   <img id="playButton" src="assets/img/1-page/Group 2.png" class="img-over" style="cursor: pointer; width: 10%; height: auto;" alt="playButton" onclick="playPause()">
   </div> -->
 
-  <div class="image-container" style="padding-bottom: 5vh;">
+  <div class="image-container" style="padding-bottom: 5vh; z-index: 0;">
 
     <video id="myVideo" class="video-js vjs-theme-forest" data-setup='{}' autoplay controls muted onclick="playPause()">
       <source src="assets/img/BM_4OF99_Arta.mp4" class="fullwidth-image" type="video/mp4">

@@ -68,15 +68,15 @@
 }
 
 .left-menu {
-  padding: 15rem 5rem;
+  padding-top: 25rem;
 }
 
 .left-menu a{
-  font-size: 4.5rem;
+  font-size: 10rem;
 }
 
 .left-menu li {
-  margin: 3rem 0;
+  margin: 15rem 0;
 }
 
 .menu ul li {
