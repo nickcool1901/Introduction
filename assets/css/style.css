@@ -12,16 +12,16 @@
 }
 
 .background-image {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: auto;
+  /* height: auto; */
   top: -3.5rem;
   background-size: cover;
   background-position: center center;
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: auto;
   font-size: calc(1px + 37 * (100vw / 1280));
@@ -63,7 +63,7 @@
   transition: all 0.2s ease;
   top: -200vh;
   width: 100%;
-  text-align: center;
+  text-align: left;
   height: 100vh;
   z-index: 100;
   overflow-y: auto;
@@ -76,28 +76,31 @@
 .left-menu a{
   text-decoration: none;
   color: gray;
-  height: 100vh;
-  padding-left: 5px;
+  padding-left: 1rem;
   transition: all 0.2s ease;
   list-style-type: none;
 }
 
-.left-menu a:hover {
+/* .left-menu a:hover {
   border-left: 0.2rem solid greenyellow;
   padding-left: 1rem;
   transition: all 0.2s ease;
+} */
+
+nav {
+position: fixed;
 }
 
 nav .logo{
-  position: absolute;
-  height: -1rem;
+  position: fixed;
+  height: -1.5rem;
   z-index: 102;
   transition: transform .3s;
 }
 
-nav .logo img {
+/* nav .logo img {
   width: calc(1px + 100 * (100vw / 1280));
-}
+} */
 
 nav.logo :hover {
   cursor: pointer;
@@ -150,9 +153,9 @@ select option:hover {
   .nav-menu {
     cursor: pointer;
     z-index: 100;
-    top: 1rem;
-    right: 5rem;
-    position: absolute;
+    top: 2rem;
+    right: 10rem;
+    position: fixed;
     display: block;
   }
 
@@ -164,7 +167,7 @@ select option:hover {
   .Languages{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     gap: 15%;
   }
 
